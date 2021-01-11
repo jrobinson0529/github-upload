@@ -1,0 +1,374 @@
+body {
+    background: lightslategray;
+    font-size: 10px;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+h1 {
+    margin-top: 20%;
+    color: white;
+}
+header {
+    color:lightgrey;
+    font-size: 3em;
+    text-align: center;
+    background-color: #5A0C1C;
+    padding: 20px 20px;
+    border-bottom: solid 10px rgba(45, 0, 25, .75);
+    height: 100vh;
+}
+#welcome-section {
+    background-color: #5A0C1C;
+}
+h2 {
+    font-weight: 300;
+    color: rgb(237, 239, 241);
+}
+main {
+    font-size: 1.2em;
+    text-align: center;
+}
+.overview {
+    color: black;
+    font-size: 2em;
+    border: 2px silver solid;
+    border-radius: 10px;
+    background-color: silver;
+    width: 50%;
+    margin: 5em auto;
+    padding: 20px;
+}
+.center-container {
+    display: flex;
+    justify-content: space-around;
+}
+.html-image {
+    height: 300px;
+    margin-top: 10em;
+    padding: 10px 60px;
+}
+.thankyou {
+    color:lightgrey;
+    font-size: 1.4em;
+}
+
+
+/* Navbar styling */
+
+.navbar {
+    height: 30px;
+    background-color: #0C5A4A;
+    padding: 0;
+    margin-top: 0;    
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;  
+}
+a {
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    text-decoration: none;
+    color:blanchedalmond;
+    font-size: 1em;
+    transition: 1.2s;
+}
+a:hover {
+    color: white;
+
+}
+li > a {
+    font-size: 20px;
+}
+
+
+
+
+/* Portfolio-page specific */
+
+#projects {
+   width: 100%;
+   margin-top: 50px;
+   padding: 20px;
+   display: flex;
+   justify-content: center;
+   column-count: 1;
+   flex-flow: column wrap;
+   align-items: center;
+
+
+}
+.project-tile {                                               /* Controls the webpage preview box */
+   padding: 25px;
+   text-align: center;
+   border: solid #0a493dec 4px;
+   border-radius: 5px;
+   width: 70%;
+   margin: 20px 25px 200px;
+   background-color:rgba(59, 71, 180, .25) ;
+   flex: 1 1 300px;
+   
+}
+.html-intro-wrapper {
+    text-align: center;
+    background-color: inherit;
+    width: inherit;
+    
+    
+}
+.html-intro-wrapper > h3 {
+    margin-bottom: 200px;
+    text-align: center;
+    background-color: inherit;
+    width: inherit;
+    font-size: 56px;
+    padding: 100px;
+    border-bottom: rgba(74, 80, 124, 0.507) 4px solid ;
+    color: blanchedalmond;
+}
+/* Background images for each project tile */
+#grace-hopper {
+   background-image: url("../pictures/GraceHopperPage.png");
+   background-position: center;
+   background-size: cover;
+
+}
+#product-landing {
+    background-image: url("../pictures/flextapepage.png");
+    background-position: center;
+    background-size: cover;
+}
+#rl-survey {
+    background-image: url("../pictures/rocketleaguesurveyform.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#tech-doc {
+    background-image: url("../pictures/techdocpage.png");
+    background-position: center;
+    background-size: cover;
+
+}
+#jstest {
+    background-image: url("../pictures/placeholder.jpg");
+    background-position: center;
+    background-size: cover;
+}
+#lorem-ipsum {
+    background-image: url("../pictures/placeholder.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+/* Add more clickable image links for protfolio webpage ABOVE */
+.sidebar-link {
+    margin-bottom: 100px;
+}
+.project-tile > a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    visibility: hidden;
+    border: solid 2px blue;
+}
+
+
+
+
+
+
+
+#portfolio-nav {
+    margin-top: 0;
+}
+.project-tile > h3 {
+    font-weight: 700;
+    font-size: 2em;
+    color: rgb(208, 207, 214)
+}
+.projects > p {
+    font-size: 1.5em;
+    color: #b8afeb;
+    position: relative;
+    font-style: italic;
+    font-weight: 600;
+    width: 75%;
+    text-align: center;
+}
+.bottompage {
+    text-align: center;
+    margin-top: 100px;
+}
+.page-links:hover {
+    animation: none;
+    font-size: 3.2em;
+}
+.page-links {
+    margin: 0;
+    font-size: 3em;
+    color:#dbd1d3;
+
+}
+
+#profile-link {
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    border-top: 2px  rgba(21, 25, 61, 1) solid;
+    padding: 20px;
+    margin-top: 10%;
+
+}
+#profile-link > li {
+    width: 8%;
+}
+#profile-link > li > a {
+color: blanchedalmond;
+}
+@media (max-width: 600px) {
+    .project-tile {
+        font-size: 6px;
+        height: auto;
+    }
+}
+/* JS TESTING CSS */
+.button-wrapper {
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+}
+#test-button {
+    color: darkorange;
+    background-color: darkblue;
+    font-weight: 700;
+    width: 100px;
+    height: 100px;
+}
+.test-text {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.test-text > p {
+    width: 50%;
+    font-size: 16px;
+    color: blanchedalmond;
+}
+/* Side navigation CSS */
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:  #095592; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 12px 8px 8px 40px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #d8c9c9;
+    display: block;
+    transition: 0.3s;
+  }
+  .sidenav > a > h3 {
+    padding: 10px;
+    border-bottom: 2px #818181 solid;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  .sidenav-open {
+      position: fixed;
+      top: -10px;
+      left: 4px;
+      font-size: 42px;
+      z-index: 2;
+
+  }
+  /* controls position and behaviour of the &#8801 symbol in nav bar */
+  span {
+      margin-left: 10px;
+      margin-top: 0;
+      top: 0;
+      left: 0;
+      position: absolute;
+  }
+
+  /* ABOUT ME specific CSS */
+
+  #about-me-header {
+    background-image: url("../pictures/jpic1.jpg");
+    background-position: center;
+    background-size: fill;
+    border-bottom: none;
+  }
+
+
+  .aboutme-container > div > h3 {
+      font: 700;
+      font-size: 50px;
+      color: blanchedalmond;
+      margin-top: 100px;
+  }
+  .aboutme-container {
+      display: flex;
+      text-align: center;
+      justify-content: center;
+      background-image: url("../pictures/empenadas.jpg");
+      background-position: center;
+      background-size: fill;
+  }
+  .intro-container {
+      text-align: center;
+      color: rgb(212, 212, 224);
+      padding: 20px;
+      font-size: 18px;
+      width: 80%;
+      background: lightslategray;
+      border: 10px rgba(45, 0, 25, .75) solid;
+  }
+  .intro-container > p {
+  text-indent: 20px;
+  margin: 50px;
+  line-height: 1.5;
+  }
